@@ -3,11 +3,21 @@
   display: flex;
   // split into two columns;
   flex-direction: row;
+  margin-left: 150px;
+  font-size: 18px;
+  margin-top: 60px;
 
   .query-space {
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+
+    // @media (min-width: 640px) { /* sm breakpoint, adjust as per your design */
+    //   // flex-direction: row; /* Switch to row for larger screens */
+    //   max-width: 1200px; /* Max width of 1200px */
+      
+    // }
 
     .database-actions {
       display: flex;
@@ -22,10 +32,10 @@
     }
 
     .query-error {
-      color: red;
+      color: rgb(138, 44, 237);
     }
     .query-example {
-      background-color: rgb(230, 230, 230);
+      background-color: rgb(50, 120, 71);
       padding: 0.5rem;
     }
 
@@ -39,4 +49,41 @@
       }
     }
   }
+}
+
+.sidebar {
+  height: 100%;
+  width: 150px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-top: 40px;
+  background-color: lightblue;
+}
+.sidebar div {
+  padding: 8px;
+  font-size: 24px;
+  display: block;
+}
+
+
+.sidebar a {
+  padding: 8px;
+  font-size: 24px;
+  display: block;
+  text-decoration: none;
+}
+.sidebar a:hover {
+  cursor: pointer;
+  opacity: .7;
+}
+
+.top_section {
+  display: flex;
+  margin-left: 150px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  background-color: lightblue;
+  height: 40px;
 }

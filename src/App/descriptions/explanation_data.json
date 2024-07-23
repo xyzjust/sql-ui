@@ -1,0 +1,52 @@
+{
+  "select_from": {
+    "title": "select_from",
+    "description": "The SELECT statement is used to retrieve data from one or more tables. FROM specifies the table(s) to query.",
+    "additionalInfo": "SELECT is the most common SQL command. It allows you to specify which columns you want to retrieve and from which tables."
+  },
+  "where": {
+    "title": "where",
+    "description": "The WHERE clause is used to filter records based on specific conditions.",
+    "additionalInfo": "It allows you to specify criteria that returned rows must meet, effectively narrowing down your result set."
+  },
+  "limit": {
+    "title": "limit",
+    "description": "The LIMIT clause is used to specify the maximum number of rows to return in the result set.",
+    "additionalInfo": "This is particularly useful for pagination or when you only need a subset of the results."
+  },
+  "left_join": {
+    "title": "left_join",
+    "description": "LEFT JOIN returns all records from the left table and matched records from the right table. If there's no match, NULL values are returned for right table columns.",
+    "additionalInfo": "This is useful when you want to include all records from one table even if they don't have corresponding records in the joined table."
+  },
+  "group_by": {
+    "title": "group_by",
+    "description": "GROUP BY is used to group rows that have the same values in specified columns into summary rows.",
+    "additionalInfo": "It's often used with aggregate functions like COUNT(), MAX(), MIN(), SUM(), AVG() to perform calculations on each group."
+  },
+  "partition_by": {
+    "title": "partition_by",
+    "description": "PARTITION BY divides the result set into partitions and performs computations on each subset of partitioned data.",
+    "additionalInfo": "It's commonly used with window functions to perform calculations across a set of rows that are related to the current row."
+  },
+  "order_by": {
+    "title": "order_by",
+    "description": "ORDER BY is used to sort the result set in ascending or descending order based on one or more columns.",
+    "additionalInfo": "You can specify ASC for ascending order (default) or DESC for descending order."
+  },
+  "with": {
+    "title": "with",
+    "description": "The WITH clause, also known as Common Table Expression (CTE), allows you to name a subquery and reference it later in the main query.",
+    "additionalInfo": "It's useful for improving readability and allowing you to reference the same subquery multiple times in a single statement."
+  },
+  "having": {
+    "title": "having",
+    "description": "The HAVING clause is used to specify a search condition for a group or an aggregate. It's often used with GROUP BY.",
+    "additionalInfo": "Unlike WHERE, which filters individual rows before grouping, HAVING filters groups after they've been created."
+  },
+  "qualify": {
+    "title": "qualify",
+    "description": "QUALIFY is used to filter the results of window functions. It's similar to WHERE, but operates on the results of window functions.",
+    "additionalInfo": "This clause is specific to certain databases like Snowflake and is not part of standard SQL."
+  }
+}
